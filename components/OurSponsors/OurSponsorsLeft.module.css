@@ -1,0 +1,119 @@
+.LeftSection{
+  width: 50%;
+  height: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SolarSystem{
+  display: flex;
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  max-height: 500px;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: solid #032E3A thick;
+}
+
+.Title{
+  color: white;
+  font-weight: 400;
+  margin-bottom: 100px;
+  border-bottom: solid thick white;
+  width: 80%;
+  align-self: flex-start;
+  text-align: end;
+  font-size: 2rem;
+}
+
+.SolarSystemCircle1{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  border-radius: 100%;
+  border: solid #032E3A thick;
+  width: 60%;
+  height: 60%;
+  animation: Rotating 10s infinite linear;
+}
+
+.SolarSystemCircle2{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  border-radius: 100%;
+  border: solid #032E3A thick;
+  width: 30%;
+  height: 30%;
+  animation: Rotating 10s infinite linear;
+}
+@keyframes Rotating {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+
+  }
+}
+.SolarSystemCircle2_innerCircle{
+  border-radius: 100%;
+  border: solid #032E3A thick;
+  width: 30px;
+  height: 30px;
+  background-color: #011C25;
+  margin: 0px 10px;
+}
+
+
+
+.SolarSystemSun{
+  position: absolute;
+}
+
+.SolarSystem_ImgRotate{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+  animation: Rotating 10s infinite linear;
+
+}
+.SolarSystem_Img1{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 100%;
+  border: solid #032E3A thick;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  left: 40%;
+  top: 90%;
+  background-color: whitesmoke;
+  animation: RotatingCircle 10s infinite linear;
+  
+}
+
+@keyframes RotatingCircle {
+  0%{
+    transform: rotate(0deg);
+    
+  }
+  50%{
+    transform: rotate(-180deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+  
+}
